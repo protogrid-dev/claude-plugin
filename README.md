@@ -28,7 +28,7 @@ Everything goes to protogrid's MCP server at `api.protogrid.dev` and nowhere els
 - `get_server`, `list_tools` and `get_connection` send a server name.
 - `check_server` sends the URL you ask it to check. protogrid then probes that URL once from its own servers, reads the protocol answer, the tool list and any public OAuth metadata, never sends credentials and never calls the server's tools. The result is kept for 30 days under a random link.
 
-The skills never ask for API keys, tokens or passwords; configurations come back with placeholders such as `${ACME_API_KEY}` that you fill in on your own machine.
+The skills never ask for API keys, tokens or passwords; configurations come back with placeholders where a secret goes, which you fill in on your own machine.
 Scores come from observable signals; no audit is implied, and a passing check is not a directory approval.
 
 Privacy policy: https://protogrid.dev/privacy.

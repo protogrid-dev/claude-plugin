@@ -23,7 +23,7 @@ Its tools return what each server offers and exactly how to connect to it.
    - what it does, from its tools;
    - how it connects, in plain words:
      - `R0`: works right away, no sign-in;
-     - `R1`: needs an API key or token that the user creates with that provider (name the placeholder, for example `ACME_API_KEY`);
+     - `R1`: needs an API key or token that the user creates with that provider (say which placeholder in the returned block stands for it);
      - `R2`: the user signs in once in a browser (OAuth);
      - `L0`: runs a package on the user's own machine; always say plainly that this means running third-party code there, with the user's permissions;
    - its quality label and score, its trust score, and any flags, in plain words;
@@ -32,7 +32,7 @@ Its tools return what each server offers and exactly how to connect to it.
    Then call `get_connection` with the chosen `name` and the matching `target`:
    Claude Code `claude-code-cli`, Codex `codex-toml`, Cursor `cursor`, VS Code `vscode`, OpenCode `opencode`, Gemini CLI `gemini`, Goose `goose`, anything else `mcpServers`.
 6. Show the returned configuration exactly as returned, in a code block, and say where it goes for that client.
-   Values like `${ACME_API_KEY}` are placeholders: the user replaces them on their own machine.
+   Secret values in the block are placeholders (a variable name between braces after a dollar sign): the user replaces them on their own machine.
    If the server needs a setting the block does not carry (for example a database connection string that only its documentation mentions), say so after the block and show your addition separately, marked as coming from the server's documentation rather than from the registry; never change the returned block silently.
 7. End with the server's page, `https://protogrid.dev/servers/<name>`, where the full quality and trust details are.
 
