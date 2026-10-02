@@ -1,0 +1,8 @@
+{
+  "name": "protogrid",
+  "description": "The protogrid plugin: find MCP servers by task, get a ready configuration, check your own MCP server.",
+  "owner": { "name": "Protogrid", "email": "hello@protogrid.dev", "url": "https://protogrid.dev" },
+  "plugins": [
+    { "name": "protogrid", "source": ".", "category": "developer-tools" }
+  ]
+}

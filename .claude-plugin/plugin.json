@@ -1,0 +1,16 @@
+{
+  "name": "protogrid",
+  "displayName": "protogrid",
+  "version": "0.4.0",
+  "description": "Find MCP servers by task and get a ready configuration for your client; check your own MCP server before a directory submission.",
+  "author": { "name": "Protogrid", "email": "hello@protogrid.dev", "url": "https://protogrid.dev" },
+  "homepage": "https://protogrid.dev",
+  "repository": "https://github.com/protogrid-dev/claude-plugin",
+  "license": "MIT",
+  "keywords": ["mcp", "model-context-protocol", "registry", "developer-tools"],
+  "icon": "./icon.png",
+  "documentationUrl": "https://docs.protogrid.dev/reference/mcp-server/",
+  "supportUrl": "https://github.com/protogrid-dev/claude-plugin/issues",
+  "privacyPolicyUrl": "https://protogrid.dev/privacy",
+  "termsOfServiceUrl": "https://protogrid.dev/terms"
+}

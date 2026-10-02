@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "protogrid": { "type": "http", "url": "https://api.protogrid.dev/mcp" }
+  }
+}
